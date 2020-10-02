@@ -1,0 +1,39 @@
+# define verde    13  
+# define amarillo 12
+# define rojo     11
+# define Verde2     10
+# define Amarillo2     9
+# define rojo     8
+void setup() {
+  pinMode(13, LOW);
+  pinMode(12, LOW);
+  pinMode(11, LOW);
+  pinMode(10, LOW);
+  pinMode(9, LOW);
+  pinMode(8, LOW);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(13, HIGH);  
+  digitalWrite(8, HIGH);  
+  delay(6000);
+  digitalWrite(13, LOW); 
+                      
+  digitalWrite(12, HIGH);  
+  digitalWrite(8, HIGH);  
+  delay(1000);
+  digitalWrite(12, LOW);  
+  digitalWrite(8, LOW);
+
+  digitalWrite(10, HIGH);  
+  digitalWrite(11, HIGH);  
+  delay(6000);
+  digitalWrite(10, LOW); 
+
+  digitalWrite(9, HIGH);  
+  digitalWrite(11, HIGH);  
+  delay(1000);
+  digitalWrite(9, LOW);  
+  digitalWrite(11, LOW);
+}
